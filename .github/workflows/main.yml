@@ -14,8 +14,8 @@ jobs:
           fileName: '*.sh'
       - name: build
         run: |
-          chmod +x sdk*sh
-          ./sdk*sh -y -d sdk
+          chmod +x poky*sh
+          ./poky*sh -y -d sdk
           . sdk/env*
           cmake .
 
