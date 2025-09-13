@@ -1,0 +1,14 @@
+name: Yocto APP CI
+
+on: [push]
+
+jobs:
+  prepare:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - uses: robinraju/release-downloader@v1
+        with:
+          repository: 'arnew/yocto-ci-test'
+          latest: true
+          fileName: '*'
