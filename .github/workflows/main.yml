@@ -12,3 +12,10 @@ jobs:
           repository: 'arnew/yocto-ci-test'
           latest: true
           fileName: '*.sh'
+      - name: build
+        run: |
+          chmod +x sdk*sh
+          ./sdk*sh -y -d sdk
+          . sdk/env*
+          cmake .
+
