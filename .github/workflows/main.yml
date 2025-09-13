@@ -11,4 +11,4 @@ jobs:
         with:
           repository: 'arnew/yocto-ci-test'
           latest: true
-          fileName: '*'
+          fileName: '*.sh'
