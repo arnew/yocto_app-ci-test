@@ -18,4 +18,5 @@ jobs:
           ./poky*sh -y -d sdk
           . sdk/env*
           cmake .
+          make
 
