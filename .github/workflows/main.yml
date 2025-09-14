@@ -11,10 +11,9 @@ jobs:
         with:
           repository: 'arnew/yocto-ci-test'
           latest: true
-          fileName: '*.sh.xz'
+          fileName: '*.sh'
       - name: build
         run: |
-          unxz *xz
           chmod +x poky*sh
           ./poky*sh -y -d sdk
           . sdk/env*
